@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kellogg AI Club</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            background-image: url('YOUR_AI_BACKGROUND_IMAGE_URL');
+            background-size: cover;
+            color: #29056c;
+        }
+        .navbar-custom {
+            background-color: #4b2e83; /* Kellogg Purple */
+        }
+        .jumbotron {
+            background-image: url('https://img.freepik.com/free-vector/abstract-blue-light-pipe-speed-zoom-black-background-technology_1142-9530.jpg?size=626&ext=jpg&ga=GA1.1.1700460183.1709510400&semt=ais');
+            background-size: cover;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-custom navbar-dark fw-bold">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="data:image/png;base64,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" alt="AI" width="30" height="30"> Kellogg AI Club</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Past Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Resource Library</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Leadership Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron jumbotron-fluid text-center py-5">
+    <div class="container">
+        <h1 class="display-4">Kellogg AI Club</h1>
+        <p class="lead">Empowering today's business leaders with tomorrow's AI innovations.</p>
+    </div>
+  </div>
+
+  <div class="container my-5">
+  <div class="row text-center">
+      <div class="col-md-3">
+          <h3>Stay Current</h3>
+          <p>Keep abreast of the latest AI trends and technologies that are shaping the business world.</p>
+      </div>
+      <div class="col-md-3">
+          <h3>Hands-on Skills</h3>
+          <p>Engage in workshops and projects to gain practical skills in AI applications and tools.</p>
+      </div>
+      <div class="col-md-3">
+          <h3>Network</h3>
+          <p>Connect with fellow AI enthusiasts, industry experts, and academics in our community.</p>
+      </div>
+      <div class="col-md-3">
+          <h3>Career Support</h3>
+          <p>Access resources, mentorship, and opportunities to advance your career in AI.</p>
+      </div>
+  </div>
+  <div class="text-center mt-4">
+      <a href="#" class="btn btn-primary">Join Us</a>
+  </div>
+</div>
+
+<div class="container-fluid my-5 bg-light p-5">
+  <h2 class="text-center mb-4">Upcoming Events</h2>
+  <div id="eventsCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <h5>Lunch & Learn - AI Implications for Enterprise & Consulting</h5>
+              <p>Feb 2, 2024 | 12 PM – 12:45 PM CST</p>
+              <p>Join us for our next session with Daniel Lee to explore key AI implications.</p>
+          </div>
+          <div class="carousel-item">
+              <h5>Walk in My Shoes: Real AI-Product case sessions</h5>
+              <p>Feb 19, 2024 | 12:15 PM – 1:15 PM CST</p>
+              <p>Step into the shoes of AI professionals and gain real-world insights.</p>
+          </div>
+          <div class="carousel-item">
+              <h5>K-AI Presents: Basic AI Legal Risks for New MBAs</h5>
+              <p>Mar 5, 2024 | 12:15pm - 1:15pm CST</p>
+              <p>Learn about AI legal risks from Kellogg JD-MBA alums Lisa Wiznitzer and Carl P. Evans III.</p>
+          </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#eventsCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#eventsCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+      </button>
+  </div>
+</div>
+
+<div class="container-fluid bg-dark text-white py-5">
+  <div class="container text-center">
+      <h2>Subscribe to Our Newsletter</h2>
+      <p>Get the latest news and updates about AI directly to your inbox.</p>
+      <form action="YOUR_SUBSCRIPTION_ENDPOINT" method="POST">
+          <div class="mb-3">
+              <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+  </div>
+</div>
+
+
+<footer class="container-fluid text-center py-3">
+  <div class="row">
+      <div class="col-md-6">
+          <p>&copy; 2024 Kellogg AI Club. All rights reserved.</p>
+      </div>
+      <div class="col-md-6">
+          <p>Follow us on social media</p>
+      </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
